@@ -19,6 +19,3 @@ jobs:
           whoami
           sleep 5
           pwd
-
-
-
