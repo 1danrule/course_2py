@@ -41,12 +41,17 @@
 
 import pytest
 
-from models_HW import Book, Library
+from models_hw import Book, Library
 
 
 @pytest.fixture(scope="session")
 def book() -> Book:
     return Book(book_name="The Lord of the Rings by", author_name="J.R.R. Tolkien")
+
+
+@pytest.fixture(scope="session")
+def book0() -> Book:
+    return Book(book_name="Gulliver's Travels", author_name="Jonathan Swift")
 
 
 @pytest.fixture(scope="session")
